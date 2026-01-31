@@ -1,0 +1,60 @@
+# ================================================
+# AI Accident Detection System - Backend
+# Python Dependencies
+# ================================================
+
+# Web Framework
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+python-multipart==0.0.6
+
+# AI/ML Libraries
+tensorflow==2.15.0
+opencv-python==4.8.1.78
+numpy==1.24.3
+
+# Alternative: Use PyTorch instead of TensorFlow
+# torch==2.1.0
+# torchvision==0.16.0
+
+# Database
+  # Built-in with Python
+# HTTP Requests
+requests==2.31.0
+
+# SMS Alerts (Optional - uncomment if using)
+# twilio==8.10.0
+
+# Email
+# Built-in smtplib - no installation needed
+
+# File Handling
+python-dateutil==2.8.2
+
+# Additional Utilities
+pillow==10.1.0  # Image processing
+pydantic==2.5.0  # Data validation
+
+# Development Tools (Optional)
+pytest==7.4.3  # Testing
+black==23.11.0  # Code formatting
+flake8==6.1.0  # Linting
+
+# ================================================
+# INSTALLATION INSTRUCTIONS
+# ================================================
+# 
+# 1. Create virtual environment:
+#    python -m venv venv
+#
+# 2. Activate virtual environment:
+#    Windows: venv\Scripts\activate
+#    Linux/Mac: source venv/bin/activate
+#
+# 3. Install dependencies:
+#    pip install -r requirements.txt
+#
+# 4. Run the server:
+#    python main.py
+#
+# ================================================

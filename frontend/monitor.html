@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Live Monitoring</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container wide">
+    <h1>📹 Live Accident Monitoring</h1>
+
+    <!-- Camera -->
+    <video id="camera" autoplay muted></video>
+
+    <!-- Upload Video -->
+    <input type="file" id="videoInput" accept="video/*">
+
+    <!-- Status Panel -->
+    <div class="status-panel">
+        <p>Status: <span id="statusText">Waiting...</span></p>
+        <p>Accident Probability: <span id="probability">-</span></p>
+        <p>Location: <span id="locationText">Not Available</span></p>
+    </div>
+
+    <!-- Alert -->
+    <div id="alertBox" class="alert hidden">
+        🚨 ACCIDENT DETECTED!
+    </div>
+
+    <!-- Emergency Alert Panel -->
+    <div class="alert-panel hidden" id="alertPanel">
+        <h3>🚑 Emergency Alerts</h3>
+        <p>Ambulance: <span id="ambulanceStatus">Pending</span></p>
+        <p>Police: <span id="policeStatus">Pending</span></p>
+        <p>Emergency Contact: <span id="contactStatus">Pending</span></p>
+    </div>
+
+    <!-- Buttons -->
+    <div class="buttons">
+        <button onclick="startCamera()">🎥 Start Camera</button>
+        <button onclick="uploadVideo()">🚑 Detect Accident</button>
+        <button onclick="sendAlerts()">📨 Send Alerts</button>
+        <button onclick="goBack()">⬅ Back</button>
+        <button onclick="checkBackend()">🔌 Check Backend</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
